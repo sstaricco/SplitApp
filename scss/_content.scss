@@ -1,0 +1,355 @@
+html {
+    font-size: 62.5%;
+        body {
+            font-size: 1.6rem;
+            font-family: $corporate;
+            a {
+                text-decoration: none;
+            }
+            h1 {
+                color: #472099;
+                font-family: Gotham-Rounded;
+                font-weight: bold;
+                font-size: 3.8rem;
+                padding: 1.6rem 0 1.6rem 3rem;
+            }
+            h2 {
+                color: #472099;
+                font-family: Gotham-Rounded;
+                font-weight: bold;
+                font-size: 3rem;
+                padding: 16px 0;
+            }
+            p {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+            }
+            ul, ol {
+                list-style: none;
+            }
+            
+            hr {
+                border-top: $border-s;
+            }
+        }
+}
+
+.containerGeneral {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+
+.title {
+    padding-top: 2.8rem;
+}
+
+.pMain {
+    padding-left: 3rem;
+}
+
+/*hero*/
+.containerHero {
+    padding: 0 0 4rem 0;
+    margin: 0;
+    & h1, & h2, & p, & a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.hero__info {
+    padding: 3rem;
+    position: absolute;
+    top: 24rem;
+    width: 40%;
+
+}
+
+.hero__description {
+    padding-left: 3rem;
+}
+
+.hero__icon {
+    width: 96px;
+}
+
+.hero__storeText {
+    font-size: 1.6rem;
+}
+
+.downloadStore {
+    text-align: center;
+    margin: 24px;
+    display: inline-block
+}
+/*fin hero*/
+
+
+/*elevator*/
+.elevator {
+    margin: 2rem 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.elevator__title {
+    font-size: 3.4rem;
+    text-align: center;
+}
+.elevator__text {
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+/*fin elevator*/
+
+/*funciones destacadas*/
+.funcionesDestacadas {
+    margin: 3.6rem;
+}
+.imgLeft-1 {
+    max-width: 80%;
+    height: auto;
+}
+
+.imgLeft-2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgRight-1 {
+    max-width: 100%;
+    height: auto;
+}
+/*fin funciones destacadas*/
+
+/*download cta*/
+.downloadCta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+}
+/*fin download cta*/
+
+/*sign in online*/
+.signInSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signInBg {
+    @extend .signInSection;
+    margin-top: 3.2rem;
+}
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding-top: 2rem;
+}
+
+form input {
+    border-radius: 4px;
+}
+
+form {
+    legend,fieldset,input {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+.socialSign {
+text-align: center;
+display: inline-flex;
+    li {
+        padding: 2.4rem 2rem 0 2rem;
+        color: $p-600;
+            a {
+                color: $p-600;
+                font-size: 1.4rem;
+                    &:hover {
+                        color: $p-400;
+                    }
+            }
+    }
+    i {
+        font-size: 2.8rem;
+        padding-bottom: 0.6rem;
+    }
+}
+
+.FooterMargin {
+    margin-top: 8rem;
+}
+/*fin sign in online*/
+
+/*video como funciona*/
+.videoComoFunciona {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 2.4rem;
+}
+/*fin video como funciona*/
+
+/*contacto*/
+.contactContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.contactList {
+    text-align: center;
+}
+
+.contactIcons {
+    text-align: center;
+        li {
+            padding: 2.4rem 2rem 0 2rem;
+            color: $p-600;
+                a {
+                    color: $p-600;
+                    font-size: 1.4rem;
+                        &:hover {
+                            color: $p-400;
+                        }
+                }
+        }
+        i {
+            font-size: 2.8rem;
+            padding-bottom: 0.6rem;
+        }
+    
+    }
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 2rem;
+    margin: 0 auto 2rem auto;
+}
+/*fin contacto*/
+
+@media only screen and (max-width: 1280px) {
+    
+    .playStoreImg, .appStoreImg {
+        width: 64px;
+    }
+    .hero__storeText {
+        font-size: 1.2rem;
+    }
+    .hero__info {
+        padding: 1.2rem;
+    }
+
+    .downloadStore {
+        margin: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+    p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    /* hero */
+    .hero__info {
+        padding: 3rem;
+        position: static;
+        width: auto; 
+    }
+
+    .storeHeroContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .containerHero {
+        padding: 0 0 4rem 0;
+        margin: 0;
+        & h1, & h2, & p, & a {
+            color: $p-500;
+            text-decoration: none;
+        }
+    }
+    /* fin hero */
+
+
+    /*funciones destacadas*/
+    .featuredContainer {
+        margin: auto;
+    }
+
+    .imgLeft-1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .imgLeft-2 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .imgRight-1 {
+        max-width: 100%;
+        height: auto;
+    }
+    /*fin funciones destacadas*/
+
+    /*download cta*/
+    .downloadCta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*fin download cta*/
+
+    /* contacto */
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    /* fin contacto */
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    section {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .hero__description {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+    .elevator__text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}

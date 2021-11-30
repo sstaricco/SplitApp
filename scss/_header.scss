@@ -1,0 +1,72 @@
+.header {
+    box-shadow: $shadow-1;
+}
+
+.navMain {
+    border-bottom: $border-p;
+    padding-bottom: 24px;
+}
+
+.menu__signList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: $gradient-p-x;
+    font-weight: 300;
+    width: 100%;
+    padding: 8px 0;
+        a {
+            color: $white;
+            padding: 0 1.6rem;    
+                &:hover {
+                    color: $p-200;
+                }
+        }            
+
+}
+
+header .badge {
+    font-size: 1.0rem;
+}
+
+header .fa-bell {
+    font-size: 2.0rem;
+}
+
+/*navbar Bootstrap*/
+#navBar li {
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+        ul {
+            li {
+                margin: 0;
+            }
+        }
+}
+
+.menu__logo {
+    padding: 2rem;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* fin navbar Bootstrap*/
+
+@media only screen and (max-width: 480px) {
+    
+    .menu__signList {
+        display: flex;
+        justify-content: space-around;
+        li {
+            font-size: 1.2rem;
+        }    
+    }
+
+    .menu__logo {
+        width: 75%;
+    }
+}

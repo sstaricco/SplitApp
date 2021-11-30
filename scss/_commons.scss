@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//colors
+    //primary
+$p-100: #f9f6ff ;
+$p-200: #f0ecfa;
+$p-250: #eae3fa;
+$p-300: #bfaaeb;
+$p-400: #5e2bcc; 
+$p-500: #472099; //main
+$p-600: #2f1666;
+    //secondary
+$s-500: #109992; //main
+$s-600: #0d807a;
+    //others
+$white: #ffffff;
+$black: #000000;
+
+//shadows
+$shadow-1: 0px 2px 8px #47209978;
+$shadow-2: 2px 2px 16px 2px #cbc3e0;
+$shadow-btn-s: 2px 2px 4px #698a87;
+$shadow-btn-p: 2px 2px 4px #412d6b;
+
+//gradients
+$gradient-p-x: linear-gradient(to right, #472099, #2F1666, #472099);
+
+//borders
+$border-p: 2px solid $p-600;
+$border-s: 1px solid $s-600;
+
+//fonts
+$corporate: 'Montserrat', serif;
+
+//container destacado
+.featuredContainer {
+    margin: 0 auto;
+    padding: 4rem;
+    box-shadow: $shadow-2;
+    background-color: $p-100;
+    border-radius: 16px;
+}
+
+//Mixin
+@mixin btn ($bg, $shadow, $bg-hover ) {
+        background-color: $bg;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+        box-shadow: $shadow;
+        cursor: pointer;
+        font-family: $corporate;
+        font-size: 1.4rem;
+        padding: 1rem;
+        text-decoration: none;
+        &:hover {
+            background-color: $bg-hover;
+            color: $white
+        }
+}
+
+//Mixin aplicado a botón de color primario:
+.btn--primary {
+    @include btn ($p-500, $shadow-btn-p, $p-400);
+}
+
+//Mixin aplicado a botón de color secundario:
+.btn--secondary {
+    @include btn ($s-600, $shadow-btn-s, $s-500);
+}
+
+.m-btn {
+    margin: 2rem;
+}
+
+
+
+
+
+
+
+
