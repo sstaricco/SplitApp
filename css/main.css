@@ -99,7 +99,8 @@ header .fa-bell {
     .menu__signList li {
       font-size: 1.2rem; }
   .menu__logo {
-    width: 75%; } }
+    width: 180px;
+    padding: 0; } }
 
 html {
   font-size: 62.5%; }
