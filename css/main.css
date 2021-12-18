@@ -91,6 +91,9 @@ header .fa-bell {
   flex-direction: row;
   justify-content: space-between; }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #2f1666; }
+
 /* fin navbar Bootstrap*/
 @media only screen and (max-width: 480px) {
   .menu__signList {
@@ -252,14 +255,14 @@ form legend, form fieldset, form input {
   margin-top: 8rem; }
 
 /*fin sign in online*/
-/*video como funciona*/
-.videoComoFunciona {
+/*como funciona*/
+.ImgComoFunciona {
   margin: 0 auto;
   width: 100%;
   height: auto;
   padding: 2.4rem; }
 
-/*fin video como funciona*/
+/*como funciona*/
 /*contacto*/
 .contactContainer {
   display: grid;
@@ -328,6 +331,8 @@ form legend, form fieldset, form input {
       text-decoration: none; }
   /* fin hero */
   /*funciones destacadas*/
+  .funcionesDestacadas {
+    margin: 0; }
   .featuredContainer {
     margin: auto; }
   .imgLeft-1 {
@@ -348,15 +353,11 @@ form legend, form fieldset, form input {
   /*fin download cta*/
   /* contacto */
   .contactContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); }
+    display: flex;
+    flex-direction: column; }
   /* fin contacto */ }
 
 @media only screen and (max-width: 480px) {
-  section {
-    margin: 8px;
-    padding: 8px; }
   .hero__description {
     font-size: 1.8rem;
     line-height: 2.8rem; }

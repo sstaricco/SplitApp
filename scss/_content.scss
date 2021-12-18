@@ -191,14 +191,14 @@ display: inline-flex;
 }
 /*fin sign in online*/
 
-/*video como funciona*/
-.videoComoFunciona {
+/*como funciona*/
+.ImgComoFunciona {
     margin: 0 auto;
     width: 100%;
     height: auto;
     padding: 2.4rem;
 }
-/*fin video como funciona*/
+/*como funciona*/
 
 /*contacto*/
 .contactContainer {
@@ -298,6 +298,10 @@ display: inline-flex;
 
 
     /*funciones destacadas*/
+    .funcionesDestacadas {
+        margin: 0;
+    }
+
     .featuredContainer {
         margin: auto;
     }
@@ -328,9 +332,8 @@ display: inline-flex;
 
     /* contacto */
     .contactContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     
     /* fin contacto */
@@ -338,11 +341,6 @@ display: inline-flex;
 }
 
 @media only screen and (max-width: 480px) {
-    
-    section {
-        margin: 8px;
-        padding: 8px;
-    }
 
     .hero__description {
         font-size: 1.8rem;
