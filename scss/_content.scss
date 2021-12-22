@@ -218,10 +218,12 @@ display: inline-flex;
 
 .contactList {
     text-align: center;
+    padding: 0;
 }
 
 .contactIcons {
     text-align: center;
+    padding: 0;
         li {
             padding: 2.4rem 2rem 0 2rem;
             color: $p-600;

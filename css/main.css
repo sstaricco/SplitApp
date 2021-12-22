@@ -277,10 +277,12 @@ form legend, form fieldset, form input {
   justify-content: center; }
 
 .contactList {
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 .contactIcons {
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
   .contactIcons li {
     padding: 2.4rem 2rem 0 2rem;
     color: #2f1666; }
