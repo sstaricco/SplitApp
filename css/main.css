@@ -106,7 +106,8 @@ header .fa-bell {
     padding: 0; } }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   html body {
     font-size: 1.6rem;
     font-family: "Montserrat", serif;
